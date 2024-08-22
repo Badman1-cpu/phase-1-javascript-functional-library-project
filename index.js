@@ -12,12 +12,41 @@ if(Array.isArray(a)  === true){//calls alert with each element passed
  //returns orginal collection
  return a
 }
-function myMap(arr,callback){
-function callback(ar){
-
+function myMap(collection, callback) {
+    if (Array.isArray(collection)) {
+      let newArray = [...collection];
+      let result = newArray.map(callback);
+      return result;
+    } else {
+        let newObj = Object.values(collection);
+        let result = newObj.map(callback);
+      for (let key in newObj) {
+        if (Array.isArray(newObj[key])) {
+          result[key] = newObj[key].map(callback);
+        } else {
+          result[key] = callback(newObj[key]);
+        }
+      }
+      return result;
+    }
+  }
+function myReduce(collection , callback, acc){
+if(Array.isArray(collection)){
+    let newArray = [...collection];
+    if(acc === undefined){
+        let sum = newArray.reduce(callback)
+        return sum
+    }
+    else{
+    let sum = newArray.reduce(callback,acc)
+    return sum
+    }
 }
+else{
+    let newObj = Object.values(collection);
+    let result = newObj.reduce(callback)
+    return result
 }
-function myReduce(){
 
 }
 function myFind(){
