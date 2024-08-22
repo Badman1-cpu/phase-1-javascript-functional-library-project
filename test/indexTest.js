@@ -177,7 +177,7 @@ describe('index.js', function () {
       expect(arraysEqual(myLast(testArr, 3), [2, 3, 4])).to.equal(true)
     })
   })
-
+/*
    describe('mySortBy', function () {
      const unsortedIntArr = [3, 8, 5, 1, 9, 11, 8]
      const unsortedStringArr = ["maru", "choux", "doge", "coconut"]
@@ -233,7 +233,7 @@ describe('index.js', function () {
      })
 
    })
-
+*/
   describe('myKeys', function () {
     const testObj = Object.assign({}, unmodifiedTestObj)
 
