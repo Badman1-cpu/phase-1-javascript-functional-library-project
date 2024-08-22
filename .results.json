@@ -2,12 +2,12 @@
   "stats": {
     "suites": 11,
     "tests": 27,
-    "passes": 21,
+    "passes": 27,
     "pending": 0,
-    "failures": 6,
-    "start": "2024-08-22T14:31:01.075Z",
-    "end": "2024-08-22T14:31:01.429Z",
-    "duration": 354
+    "failures": 0,
+    "start": "2024-08-22T15:16:55.407Z",
+    "end": "2024-08-22T15:16:55.759Z",
+    "duration": 352
   },
   "tests": [
     {
@@ -48,7 +48,7 @@
     {
       "title": "successfully returns a correctly populated array from modified object values",
       "fullTitle": "index.js myMap successfully returns a correctly populated array from modified object values",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -62,7 +62,7 @@
     {
       "title": "returns the correct reduced value when passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -83,7 +83,7 @@
     {
       "title": "returns the correct reduced value from object values",
       "fullTitle": "index.js myReduce returns the correct reduced value from object values",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -125,7 +125,7 @@
     {
       "title": "correctly returns an empty array if no matching values are found",
       "fullTitle": "index.js myFilter correctly returns an empty array if no matching values are found",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -176,10 +176,7 @@
       "fullTitle": "index.js myKeys retrieves all the names of the object's own enumerable properties",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: Cannot read properties of undefined (reading 'length')\n    at arraysEqual (test/indexTest.js:264:12)\n    at Context.<anonymous> (test/indexTest.js:241:14)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "Cannot read properties of undefined (reading 'length')"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original object",
@@ -191,12 +188,9 @@
     {
       "title": "retrieves all the values of the object's own properties",
       "fullTitle": "index.js myValues retrieves all the values of the object's own properties",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myValues is not defined\n    at Context.<anonymous> (test/indexTest.js:254:14)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "myValues is not defined"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original object",
@@ -207,56 +201,7 @@
     }
   ],
   "pending": [],
-  "failures": [
-    {
-      "title": "returns the first element of the collection",
-      "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
-      "fullTitle": "index.js myFirst returns the first n elements of the collection when the second optional argument (n) is provided",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "returns the last element of the collection",
-      "fullTitle": "index.js myLast returns the last element of the collection",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "returns the last n elements of the collection when the second optional argument (n) is provided",
-      "fullTitle": "index.js myLast returns the last n elements of the collection when the second optional argument (n) is provided",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "retrieves all the names of the object's own enumerable properties",
-      "fullTitle": "index.js myKeys retrieves all the names of the object's own enumerable properties",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: Cannot read properties of undefined (reading 'length')\n    at arraysEqual (test/indexTest.js:264:12)\n    at Context.<anonymous> (test/indexTest.js:241:14)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "Cannot read properties of undefined (reading 'length')"
-      }
-    },
-    {
-      "title": "retrieves all the values of the object's own properties",
-      "fullTitle": "index.js myValues retrieves all the values of the object's own properties",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myValues is not defined\n    at Context.<anonymous> (test/indexTest.js:254:14)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "myValues is not defined"
-      }
-    }
-  ],
+  "failures": [],
   "passes": [
     {
       "title": "calls alert with each element passed",
@@ -296,7 +241,7 @@
     {
       "title": "successfully returns a correctly populated array from modified object values",
       "fullTitle": "index.js myMap successfully returns a correctly populated array from modified object values",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -310,7 +255,7 @@
     {
       "title": "returns the correct reduced value when passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -331,7 +276,7 @@
     {
       "title": "returns the correct reduced value from object values",
       "fullTitle": "index.js myReduce returns the correct reduced value from object values",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -373,7 +318,7 @@
     {
       "title": "correctly returns an empty array if no matching values are found",
       "fullTitle": "index.js myFilter correctly returns an empty array if no matching values are found",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -392,8 +337,50 @@
       "err": {}
     },
     {
+      "title": "returns the first element of the collection",
+      "fullTitle": "index.js myFirst returns the first element of the collection",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
+      "fullTitle": "index.js myFirst returns the first n elements of the collection when the second optional argument (n) is provided",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the last element of the collection",
+      "fullTitle": "index.js myLast returns the last element of the collection",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the last n elements of the collection when the second optional argument (n) is provided",
+      "fullTitle": "index.js myLast returns the last n elements of the collection when the second optional argument (n) is provided",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "retrieves all the names of the object's own enumerable properties",
+      "fullTitle": "index.js myKeys retrieves all the names of the object's own enumerable properties",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
       "title": "does not modify the original object",
       "fullTitle": "index.js myKeys does not modify the original object",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "retrieves all the values of the object's own properties",
+      "fullTitle": "index.js myValues retrieves all the values of the object's own properties",
       "duration": 0,
       "currentRetry": 0,
       "err": {}

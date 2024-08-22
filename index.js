@@ -87,15 +87,28 @@ else {
   return Object.values(collection).length
 }
 }
-function myFirst(array, [n]){
-
+function myFirst(array,n){
+if (n === undefined){
+  return array[0]
 }
-function myLast(array, [n]){
-
+else {
+  return array.slice(0,n)
+}
+}
+function myLast(array, n){
+if(n === undefined){
+  let a = array.length - 1
+  return array[a]
+}
+else{
+  let a = array.lentgh
+  let b = array.length - n
+  return array.slice(b,a)
+}
 }
 function myKeys(object){
-
+  return Object.keys(object)
 }
-function myValue(object){
-
+function myValues(object){
+  return Object.values(object)
 }
