@@ -47,13 +47,25 @@ else{
     let result = newObj.reduce(callback)
     return result
 }
-
 }
-function myFind(){
-
+function myFind(collection , predicate){
+if(Array.isArray(collection)){
+let result = collection.find(predicate)
+return result
 }
-function myFilter(){
-
+else{
+collection.values.find(predicate)
+}
+}
+function myFilter(collection , predicate){
+if(Array.isArray(collection)){
+  let result = collection.filter(predicate)
+  return result
+}
+else{
+    let result = collection.values.filter(predicate)
+    return result 
+}
 }
 function mySize(){
 
