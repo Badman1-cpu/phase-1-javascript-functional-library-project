@@ -80,7 +80,12 @@ else{
 }
 }
 function mySize(collection){
-
+if (Array.isArray(collection)){
+  return collection.length
+}
+else {
+  return Object.values(collection).length
+}
 }
 function myFirst(array, [n]){
 
