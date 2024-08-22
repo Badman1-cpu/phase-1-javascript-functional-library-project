@@ -67,18 +67,18 @@ else{
     return result 
 }
 }
-function mySize(){
+function mySize(collection){
 
 }
-function myFirst(){
+function myFirst(array, [n]){
 
 }
-function myLast(){
+function myLast(array, [n]){
 
 }
-function myKeys(){
+function myKeys(object){
 
 }
-function myValue(){
+function myValue(object){
 
 }
