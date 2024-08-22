@@ -112,3 +112,6 @@ function myKeys(object){
 function myValues(object){
   return Object.values(object)
 }
+function mySortBy(array, callback){
+ myFilter(array,callback)
+}

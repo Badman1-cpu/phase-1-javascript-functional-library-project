@@ -1,13 +1,13 @@
 {
   "stats": {
-    "suites": 11,
-    "tests": 27,
-    "passes": 27,
+    "suites": 13,
+    "tests": 32,
+    "passes": 28,
     "pending": 0,
-    "failures": 0,
-    "start": "2024-08-22T15:16:55.407Z",
-    "end": "2024-08-22T15:16:55.759Z",
-    "duration": 352
+    "failures": 4,
+    "start": "2024-08-22T16:15:02.549Z",
+    "end": "2024-08-22T16:15:03.018Z",
+    "duration": 469
   },
   "tests": [
     {
@@ -20,7 +20,7 @@
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js myEach calls alert properly on object values",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -48,7 +48,7 @@
     {
       "title": "successfully returns a correctly populated array from modified object values",
       "fullTitle": "index.js myMap successfully returns a correctly populated array from modified object values",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -62,14 +62,14 @@
     {
       "title": "returns the correct reduced value when passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the correct reduced value when not passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when not passed an initial value",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -83,14 +83,14 @@
     {
       "title": "returns the correct reduced value from object values",
       "fullTitle": "index.js myReduce returns the correct reduced value from object values",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myReduce does not modify the original object",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -125,7 +125,7 @@
     {
       "title": "correctly returns an empty array if no matching values are found",
       "fullTitle": "index.js myFilter correctly returns an empty array if no matching values are found",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -146,7 +146,7 @@
     {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -172,9 +172,56 @@
       "err": {}
     },
     {
+      "title": "correctly sorts arrays of integers and arrays of strings",
+      "fullTitle": "index.js mySortBy correctly sorts arrays of integers and arrays of strings",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'length')\n    at arraysEqual (test/indexTest.js:264:12)\n    at Context.<anonymous> (test/indexTest.js:204:15)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "Cannot read properties of undefined (reading 'length')"
+      }
+    },
+    {
+      "title": "does not modify the original arrays",
+      "fullTitle": "index.js mySortBy does not modify the original arrays",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "correctly sorts arrays of integers with non-standard sort",
+      "fullTitle": "index.js mySortBy correctly sorts arrays of integers with non-standard sort",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'length')\n    at arraysEqual (test/indexTest.js:264:12)\n    at Context.<anonymous> (test/indexTest.js:216:15)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "Cannot read properties of undefined (reading 'length')"
+      }
+    },
+    {
+      "title": "correctly flattens a ludicrously nested array",
+      "fullTitle": "index.js myFlatten correctly flattens a ludicrously nested array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: myFlatten is not defined\n    at Context.<anonymous> (test/indexTest.js:225:24)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "myFlatten is not defined"
+      }
+    },
+    {
+      "title": "correctly flattens a single level when a second argument of \"true\" is passed",
+      "fullTitle": "index.js myFlatten correctly flattens a single level when a second argument of \"true\" is passed",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: myFlatten is not defined\n    at Context.<anonymous> (test/indexTest.js:231:24)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "myFlatten is not defined"
+      }
+    },
+    {
       "title": "retrieves all the names of the object's own enumerable properties",
       "fullTitle": "index.js myKeys retrieves all the names of the object's own enumerable properties",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -201,7 +248,48 @@
     }
   ],
   "pending": [],
-  "failures": [],
+  "failures": [
+    {
+      "title": "correctly sorts arrays of integers and arrays of strings",
+      "fullTitle": "index.js mySortBy correctly sorts arrays of integers and arrays of strings",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'length')\n    at arraysEqual (test/indexTest.js:264:12)\n    at Context.<anonymous> (test/indexTest.js:204:15)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "Cannot read properties of undefined (reading 'length')"
+      }
+    },
+    {
+      "title": "correctly sorts arrays of integers with non-standard sort",
+      "fullTitle": "index.js mySortBy correctly sorts arrays of integers with non-standard sort",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading 'length')\n    at arraysEqual (test/indexTest.js:264:12)\n    at Context.<anonymous> (test/indexTest.js:216:15)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "Cannot read properties of undefined (reading 'length')"
+      }
+    },
+    {
+      "title": "correctly flattens a ludicrously nested array",
+      "fullTitle": "index.js myFlatten correctly flattens a ludicrously nested array",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: myFlatten is not defined\n    at Context.<anonymous> (test/indexTest.js:225:24)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "myFlatten is not defined"
+      }
+    },
+    {
+      "title": "correctly flattens a single level when a second argument of \"true\" is passed",
+      "fullTitle": "index.js myFlatten correctly flattens a single level when a second argument of \"true\" is passed",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: myFlatten is not defined\n    at Context.<anonymous> (test/indexTest.js:231:24)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "myFlatten is not defined"
+      }
+    }
+  ],
   "passes": [
     {
       "title": "calls alert with each element passed",
@@ -213,7 +301,7 @@
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js myEach calls alert properly on object values",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -241,7 +329,7 @@
     {
       "title": "successfully returns a correctly populated array from modified object values",
       "fullTitle": "index.js myMap successfully returns a correctly populated array from modified object values",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -255,14 +343,14 @@
     {
       "title": "returns the correct reduced value when passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when passed an initial value",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns the correct reduced value when not passed an initial value",
       "fullTitle": "index.js myReduce returns the correct reduced value when not passed an initial value",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -276,14 +364,14 @@
     {
       "title": "returns the correct reduced value from object values",
       "fullTitle": "index.js myReduce returns the correct reduced value from object values",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not modify the original object",
       "fullTitle": "index.js myReduce does not modify the original object",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -318,7 +406,7 @@
     {
       "title": "correctly returns an empty array if no matching values are found",
       "fullTitle": "index.js myFilter correctly returns an empty array if no matching values are found",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -339,7 +427,7 @@
     {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -365,9 +453,16 @@
       "err": {}
     },
     {
+      "title": "does not modify the original arrays",
+      "fullTitle": "index.js mySortBy does not modify the original arrays",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
       "title": "retrieves all the names of the object's own enumerable properties",
       "fullTitle": "index.js myKeys retrieves all the names of the object's own enumerable properties",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
