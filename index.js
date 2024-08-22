@@ -59,12 +59,24 @@ collection.values.find(predicate)
 }
 function myFilter(collection , predicate){
 if(Array.isArray(collection)){
+  if(predicate === false){
+    let result = []
+    return result
+  }
+  else{
   let result = collection.filter(predicate)
   return result
+  }
 }
 else{
-    let result = collection.values.filter(predicate)
+    let result = Object.values(collection).filter(predicate)
+    if(predicate === false ){
+      let result = []
+      return result
+    }
+    else{
     return result 
+    }
 }
 }
 function mySize(collection){
